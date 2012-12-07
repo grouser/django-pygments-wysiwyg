@@ -48,7 +48,9 @@ def highlighter(value):
             
         value = value.replace('&lt;/code&gt;', '')
         final_text += value[last_end:]
-        
+    if final_text == '':
+        return value
+            
     return final_text
     
 
